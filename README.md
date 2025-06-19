@@ -2,7 +2,7 @@
 
 The corresponding academic publications appear in @[IJCAI-22](https://www.ijcai.org/proceedings/2022/0417.pdf)。
 
-## Experimantal Environments:
+## Experimental Environments:
 
 The list shows the explicit software in the DFOL and the corresponding version. The versions in the parameter indicate the actual software versions used in the author's environment.
 
@@ -62,20 +62,20 @@ The list shows the explicit software in the DFOL and the corresponding version. 
 
 Entering the code directory.
 
-The means of arguments:
+Explanation of the arguments:
 
 - g: Generating the trainable dataset from relational facts using the proposed propositionalization method;
 - d: The name of the dataset. In the code, the name of the directory where the task is located in. 
-- p: The name of target predicate, which is the same as the name of the file *.nl* under the ‘dataset_name/data/’ folder. 
-- cur: The flag controlling whether beginning the training process with the curriculum learning strategy. 
+- p: The name of the target predicate, which is the same as the name of the file *.nl* under the ‘dataset_name/data/’ folder. 
+- cur: The flag controlling whether to begin the training process with the curriculum learning strategy. 
 - ft: The soundness filter with the default value 0.3.
 - vd: The variable depth with the default value 1. 
 - lt: The curriculum learning times
 - amg: Learning with probabilistic datasets, the standard rate is [3] in default.
 - mis: Learning with mislabeled datasets. 
-- checkpl: Check the accuracy for a logic program head by a relation.
+- checkpl: Check the accuracy of a logic program head by a relation.
 - ap: Generate logic programs head by all predicates in the task, and generate HINT@n and MRR indicators. 
-- cap: After obtaining logic programs head bt all predicates in the task, running this to get mean accuracy of all logic programs. 
+- cap: After obtaining logic programs head by all predicates in the task, running this to get mean accuracy of all logic programs. 
 - lar: Whether the dataset is a large knowledge base dataset. Some known small dataset includes (1) All classical inductive logic programming datasets; (2) Nations dataset, Countries datasets, and UMLS datasets. If the large flag is open, then the program will use the proposed propositionalization method to save the data into TFRecords format. (0 as the default.)
 - bs: The batch_size when training the model. The default value of the batch_size is 32. (If the result is not accurate enough, please increase the batch size. 32 as the default.)
 <!-- - ete: This flag indicates the program will use the data predicted from the embedding-based link prediction model to generate trainable data. At the same time, the trainable data are stored in the TFRecords format. When this flag is open, the large flag is open in the default. Hence, we do not need to open 'lar' flag mannually. (0 as the default.) -->
