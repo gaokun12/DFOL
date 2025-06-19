@@ -1,4 +1,6 @@
-# README ☺️
+# README 
+
+The corresponding academic publications appear in @[IJCAI-22](https://www.ijcai.org/proceedings/2022/0417.pdf)。
 
 ## Experimantal Environments:
 
